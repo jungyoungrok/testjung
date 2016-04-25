@@ -1,0 +1,34 @@
+package exercise;
+
+public class exercise {
+
+	public static void main(String[]args){
+    
+		double x1=1;
+		double x2=2;
+		double x3=3;
+		double x4=4;
+	
+		double y1=12;
+		double y2=8;
+		double y3=6;
+		double y4=2;
+	
+		double averageX = (x1+x2+x3+x4)/4;
+		double averageY= (y1+y2+y3+y4)/4;
+	
+	double up = ((x1-averageX)*(y1-averageY)+(x2-averageX)*(y2-averageY)+(x3-averageX)*(y3-averageY)+(x4-averageX)*(y4-averageY));
+	double down = ((x1-averageX)*(x1-averageX)+(x2-averageX)*(x2-averageX)+(x3-averageX)*(x3-averageX)+(x4-averageX)*(x4-averageX));
+	
+	double b= up/down;
+	
+	double a= (averageY)-(b * averageX);
+	
+	double c= b*5+a;
+	
+	System.out.println("beta = " + b);
+	System.out.println("alpha = " + a);
+	System.out.println("gamma = " + c);
+		
+	}
+}
